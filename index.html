@@ -1,12 +1,12 @@
 <html>
     <head>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="container">
             <h1 class="color--title">index.html</h1>
             <label for="color--input">Hex color</label>
-            <input id="color--hex" placeholder="#000000" class="color--input" type="text">
+            <input onchange="checkInput()" id="color--hex" placeholder="#000000" class="color--input" type="text">
 
             <label for="color--slider" id="color--slider">0%</label>
             <input type="range" min="1" max="100" value="0" class="color--slider" id="myRange">
@@ -18,5 +18,6 @@
             </div>
         
         <script src="index.pack.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
